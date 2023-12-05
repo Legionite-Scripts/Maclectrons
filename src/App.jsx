@@ -4,6 +4,7 @@ import { Navigationbar } from "./Components/Navbar";
 import { Home } from "./Components/Home"; // Import your Home component
 
 import "./CSS/navbar.css";
+import "./CSS/home.css";
 
 function App() {
   return (

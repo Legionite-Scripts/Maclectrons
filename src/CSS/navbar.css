@@ -16,10 +16,32 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1em;
   background-color: #fbfbfb;
+}
+#separationOne {
+  border: 1px solid #333;
+  width: 50%;
+}
+#separationTwo {
+  border: 1px solid #333;
+  height: 3em;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navSearchBar {
+  background-color: #f2f3f5;
+  border: none;
+  height: 80%;
+  border-radius: 3px;
+}
+#navSearchBar::placeholder {
+  color: #aeaeae;
 }
 #logoImage {
   width: 2em;
@@ -39,11 +61,12 @@ body {
   color: #1e1e1e;
   font-size: 1.5em;
   font-family: cursive;
+  font-weight: 700;
 }
 #link {
   color: #1e1e1e;
   font-size: 1.1em;
-  font-weight: 200;
+  font-weight: 500;
   text-decoration: none;
 }
 #contactBtn {
@@ -66,6 +89,11 @@ body {
 #icons i {
   color: #1e1e1e;
 }
+#innerSeparationTwoHiddenIcons {
+  display: none;
+}
+
+/* Screens lower than 1000px */
 @media (max-width: 1000px) {
   #navbar {
     width: 100vw;
@@ -73,6 +101,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+  #separationOne {
+    border: 1px solid #333;
+    width: 100%;
   }
   .ml-auto {
     display: flex;
@@ -86,7 +118,8 @@ body {
     display: initial;
     color: #1e1e1e;
     font-size: 1.4em;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: cursive;
+    font-weight: 700;
   }
   #second {
     display: none;
@@ -105,5 +138,21 @@ body {
   #icons i {
     color: #1e1e1e;
     font-size: 1.2em;
+  }
+  #separationTwo {
+    display: none;
+  }
+  #innerSeparationTwoHiddenIcons {
+    display: initial;
+    border: 1px solid #333;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #innerSeparationTwoHiddenIcons i {
+    font-size: 1.1em;
+    cursor: pointer;
   }
 }
