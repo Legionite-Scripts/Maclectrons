@@ -22,11 +22,9 @@ body {
   background-color: #fbfbfb;
 }
 #separationOne {
-  border: 1px solid #333;
   width: 50%;
 }
 #separationTwo {
-  border: 1px solid #333;
   height: 3em;
   width: 30%;
   display: flex;
@@ -103,7 +101,6 @@ body {
     align-items: center;
   }
   #separationOne {
-    border: 1px solid #333;
     width: 100%;
   }
   .ml-auto {
@@ -144,7 +141,6 @@ body {
   }
   #innerSeparationTwoHiddenIcons {
     display: initial;
-    border: 1px solid #333;
     height: 4em;
     display: flex;
     flex-direction: row;
