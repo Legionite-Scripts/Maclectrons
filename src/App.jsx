@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Slider />} />
         </Routes>
-        <Slider/>
+        <Slider />
       </div>
     </Router>
   );
