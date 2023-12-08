@@ -31,7 +31,7 @@ export const Deals = () => {
             <h6 style={{ fontWeight: 700, color: "#1e1e1e" }}>
               HDMI 1920X1080
             </h6>
-            <h1 id="normalDealsText">Super Smart HD TV</h1>
+            <h1 id="normalDealsText">Super Smart 3D TV</h1>
             <h1 id="boldDealsText">
               <span>
                 <i className="fa-solid fa-scissors"></i> Flat 50%
