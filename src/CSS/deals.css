@@ -100,7 +100,6 @@
   #deals {
     width: 100%;
     height: 70em;
-    border: 1px solid #333;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

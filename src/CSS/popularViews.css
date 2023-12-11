@@ -4,17 +4,16 @@
   font-family: "Poppins", sans-serif;
 }
 #popularViews {
-  border: 1px solid #333;
-  height: 30em;
+  height: 80em;
   margin-top: 3%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border: 1px solid #333;
 }
 #topViewsDiv {
   height: 3em;
-  border: 1px solid #333;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -26,7 +25,7 @@
   font-weight: 700;
 }
 #popularProducts {
-  height: 20em;
+  height: 22em;
   border: 1px solid #333;
   display: flex;
   flex-direction: row;
@@ -50,7 +49,6 @@
 }
 #item #itemText {
   height: 30%;
-  border: 1px solid #333;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -61,26 +59,25 @@
 }
 #item #itemText h6 {
   color: #1e1e1e;
-  font-size: 1.1em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 800;
 }
 #review {
   height: 10%;
-  width: 100%;
-  border: 1px solid #333;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 #review p {
   color: #7d7d7d;
   font-size: 0.8em;
+  margin-top: 8%;
+  margin: auto;
 }
 #star {
-  width: 50%;
+  width: auto;
   height: 100%;
-  border: 1px solid #333;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,4 +85,138 @@
 }
 #star i {
   color: #ffc118;
+  font-size: 0.8em;
+}
+#popularPriceDiv {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+#popularPriceDiv h3 {
+  color: #1e1e1e;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+/* Screens from 768px to 1025px */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  #popularViews {
+    height: 240em;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #333;
+  }
+  #popularProducts {
+    height: 45%;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #item {
+    width: 90%;
+    height: 20%;
+    background-color: #f2f3f5;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #item #itemText {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #item #itemText p {
+    color: #7d7d7d;
+    font-size: 1em;
+  }
+  #item #itemText h6 {
+    color: #1e1e1e;
+    font-size: 1.8em;
+    font-weight: 900;
+  }
+  #review {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #review p {
+    color: #7d7d7d;
+    font-size: 1em;
+    margin-top: 0%;
+    text-align: center;
+    margin: auto;
+  }
+  #star {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+  }
+}
+
+/*  */
+/*  */
+/* Screens lower than 767px */
+@media (max-width: 767px) {
+  #popularViews {
+    height: 220em;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #333;
+  }
+  #popularProducts {
+    height: 45%;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #item {
+    width: 90%;
+    height: 20em;
+    background-color: #f2f3f5;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #item #itemText {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #review {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #popularPriceDiv {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }

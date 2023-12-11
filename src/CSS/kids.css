@@ -16,6 +16,7 @@
   align-items: center;
 }
 #kidsText {
+  
   width: 70%;
   height: 100%;
   display: flex;
@@ -44,20 +45,20 @@
   transform: scale(1.05);
 }
 #innerKids img {
-  width: 40%;
+  width: auto;
   height: 100%;
   -webkit-user-drag: none;
 }
 
+/* Screens from 768px to 1025px */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   #kids {
-    height: 50em;
+    height: 60em;
     width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: red;
   }
   #innerKids {
     width: 100%;
@@ -76,12 +77,27 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  #kidsText h1 {
+    color: #1e1e1e;
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+  #kidsText p {
+    color: #1e1e1e;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  #innerKids img {
+    width: auto;
+    height: 100%;
+    -webkit-user-drag: none;
+  }
 }
 
 /* Screens Lower than 767px */
 @media (max-width: 767px) {
   #kids {
-    height: 40em;
+    height: 60em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -95,6 +111,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1em;
   }
   #kidsText {
     width: 100%;
@@ -105,7 +122,7 @@
     align-items: center;
   }
   #innerKids img {
-    width: 50%;
+    width: auto;
     height: 100%;
     -webkit-user-drag: none;
   }
