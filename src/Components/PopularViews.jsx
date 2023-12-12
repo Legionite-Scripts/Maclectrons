@@ -8,6 +8,7 @@ import earphonesImage from "./Images/earphone.png";
 import clockImage from "./Images/clock.png";
 import clipperImage from "./Images/clipper.png";
 import fridgeImage from "./Images/fridge.png";
+import femaleImage from "./Images/female.png";
 
 export const PopularViews = () => {
   return (
@@ -201,6 +202,23 @@ export const PopularViews = () => {
           <Container id="popularPriceDiv">
             <h3>$89.00</h3>
           </Container>
+        </Container>
+      </Container>
+      <Container fluid id="weDeliver">
+        <Container fluid id="topViewsDiv">
+          <h1>We deliver to you</h1>
+        </Container>
+        <Container fluid id="innerWeDeliver">
+          <Container id="innerWeDeliverText">
+            <p>Awesome Discovery</p>
+            <h1>Maclectrons Delivers at your door step</h1>
+            <p>
+              From express deliveries that satisfy your immediate needs to
+              scheduled services that cater to your convenience, we've got your
+              back.
+            </p>
+          </Container>
+          <img src={femaleImage} alt="Girl" />
         </Container>
       </Container>
     </Container>
