@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 import earbudsImage from "./Images/earbuds.png";
 import oraimoImage from "./Images/oraimo.png";
 import laptopImage from "./Images/laptop.png";
@@ -9,6 +10,10 @@ import clockImage from "./Images/clock.png";
 import clipperImage from "./Images/clipper.png";
 import fridgeImage from "./Images/fridge.png";
 import femaleImage from "./Images/female.png";
+import cameraImage from "./Images/camera.png";
+import phoneImage from "./Images/phone.png";
+import blackBudsImage from "./Images/blackBuds.png";
+import smartwatchImage from "./Images/smartwatch.png";
 
 export const PopularViews = () => {
   return (
@@ -204,6 +209,8 @@ export const PopularViews = () => {
           </Container>
         </Container>
       </Container>
+
+      {/* We Deliver Section */}
       <Container fluid id="weDeliver">
         <Container fluid id="topViewsDiv">
           <h1>We deliver to you</h1>
@@ -217,8 +224,110 @@ export const PopularViews = () => {
               scheduled services that cater to your convenience, we've got your
               back.
             </p>
+            <button className="btn btn-success">View More</button>
           </Container>
           <img src={femaleImage} alt="Girl" />
+        </Container>
+      </Container>
+
+      {/* Third Section */}
+      <Container fluid id="topViewsDiv">
+        <h1>A must have for you</h1>
+      </Container>
+      <Container fluid id="popularProducts">
+        {/* First Item */}
+        <Container id="item">
+          <img src={cameraImage} alt="Digital Camera" />
+          <Container fluid id="itemText">
+            <p>Few Units Left</p>
+            <h6>Sony 3D digital camera 2023 model</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>60 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$300.50</h3>
+          </Container>
+        </Container>
+        {/* Second Item */}
+        <Container id="item">
+          <Container fluid id="freeDeliveryDiv">
+            <Container id="innerFreeDelivery">
+              <h6>Free Delivery</h6>
+            </Container>
+          </Container>
+          <img src={phoneImage} alt="Samsung Phone" />
+          <Container fluid id="itemText">
+            <p>In stock</p>
+            <h6>Samsung Galaxy S3 ultra 6.8inches...</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>600 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$219.99</h3>
+          </Container>
+        </Container>
+        {/* Third Item */}
+        <Container id="item">
+          <Container fluid id="freeDeliveryDiv">
+            <Container id="innerFreeDelivery">
+              <h6>Free Delivery</h6>
+            </Container>
+          </Container>
+          <img src={blackBudsImage} alt="Black Earbuds" />
+          <Container fluid id="itemText">
+            <p>In stock</p>
+            <h6>Ultra Sound Oraimo earpiece</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>20 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$2.00</h3>
+          </Container>
+        </Container>
+        {/* Fourth Item */}
+        <Container id="item">
+          <img src={smartwatchImage} alt="SmartWatch" />
+          <Container fluid id="itemText">
+            <p>Few Units Left</p>
+            <h6>s20 Digital Wristwatch 8 inches</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>80 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$105.00</h3>
+          </Container>
         </Container>
       </Container>
     </Container>
