@@ -6,6 +6,7 @@ import { Slider } from "./Components/Slider";
 import { Deals } from "./Components/Deals";
 import { Kids } from "./Components/Kids";
 import { PopularViews } from "./Components/PopularViews";
+import { Subscribe } from "./Components/Subscribe";
 
 // CSS imports
 import "./CSS/navbar.css";
@@ -14,6 +15,7 @@ import "./CSS/slider.css";
 import "./CSS/deals.css";
 import "./CSS/kids.css";
 import "./CSS/popularViews.css";
+import "./CSS/subscribe.css";
 
 function App() {
   return (
@@ -26,11 +28,13 @@ function App() {
           <Route path="/" element={<Deals />} />
           <Route path="/" element={<Kids />} />
           <Route path="/" element={<PopularViews />} />
+          <Route path="/" element={<Subscribe />} />
         </Routes>
         <Slider />
         <Deals />
         <Kids />
         <PopularViews />
+        <Subscribe />
       </div>
     </Router>
   );
