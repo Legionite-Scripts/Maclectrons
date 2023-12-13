@@ -7,6 +7,7 @@ import { Deals } from "./Components/Deals";
 import { Kids } from "./Components/Kids";
 import { PopularViews } from "./Components/PopularViews";
 import { Subscribe } from "./Components/Subscribe";
+import { Footer } from "./Components/Footer";
 
 // CSS imports
 import "./CSS/navbar.css";
@@ -16,6 +17,7 @@ import "./CSS/deals.css";
 import "./CSS/kids.css";
 import "./CSS/popularViews.css";
 import "./CSS/subscribe.css";
+import "./CSS/footer.css";
 
 function App() {
   return (
@@ -29,12 +31,14 @@ function App() {
           <Route path="/" element={<Kids />} />
           <Route path="/" element={<PopularViews />} />
           <Route path="/" element={<Subscribe />} />
+          <Route path="/" element={<Footer />} />
         </Routes>
         <Slider />
         <Deals />
         <Kids />
         <PopularViews />
         <Subscribe />
+        <Footer/>
       </div>
     </Router>
   );
