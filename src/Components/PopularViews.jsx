@@ -18,6 +18,9 @@ import massagerImage from "./Images/massager.png";
 import toycarImage from "./Images/toycar.png";
 import analogClockImage from "./Images/analogClock.png";
 import curlerImage from "./Images/curler.png";
+import microwaveImage from "./Images/microwave.png";
+import vacuumImage from "./Images/vacuum.png";
+import washingmachineImage from "./Images/washingmachine.png";
 
 export const PopularViews = () => {
   return (
@@ -433,6 +436,38 @@ export const PopularViews = () => {
           </Container>
           <Container id="popularPriceDiv">
             <h3>$15.99</h3>
+          </Container>
+        </Container>
+      </Container>
+      <Container fluid id="bottomAdvertisement">
+        <Container id="innerBottomAdvertisement">
+          <img src={microwaveImage} alt="Microwave" />
+          <Container id="advertisementText">
+            <h6>LG Microwave oven</h6>
+            <p>
+              Elevate your kitchen efficiency with this sleek microwave for
+              sale.
+            </p>
+          </Container>
+        </Container>
+        <Container id="innerBottomAdvertisement">
+          <img src={vacuumImage} alt="Microwave" />
+          <Container id="advertisementText">
+            <h6>Vacuum Cleaner</h6>
+            <p>
+              Effortlessly tackle dust and debris with our powerful vacuum for
+              sale.
+            </p>
+          </Container>
+        </Container>
+        <Container id="innerBottomAdvertisement">
+          <img src={washingmachineImage} alt="Washine Machine" />
+          <Container id="advertisementText">
+            <h6>LG Washing Machine</h6>
+            <p>
+              Upgrade your laundry routine with our powerful washing machine for
+              sale.
+            </p>
           </Container>
         </Container>
       </Container>
