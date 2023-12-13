@@ -14,6 +14,10 @@ import cameraImage from "./Images/camera.png";
 import phoneImage from "./Images/phone.png";
 import blackBudsImage from "./Images/blackBuds.png";
 import smartwatchImage from "./Images/smartwatch.png";
+import massagerImage from "./Images/massager.png";
+import toycarImage from "./Images/toycar.png";
+import analogClockImage from "./Images/analogClock.png";
+import curlerImage from "./Images/curler.png";
 
 export const PopularViews = () => {
   return (
@@ -327,6 +331,108 @@ export const PopularViews = () => {
           </Container>
           <Container id="popularPriceDiv">
             <h3>$105.00</h3>
+          </Container>
+        </Container>
+      </Container>
+      {/* Fourth Section */}
+      <Container fluid id="popularProducts">
+        {/* First Item */}
+        <Container id="item">
+          <Container fluid id="freeDeliveryDiv">
+            <Container id="innerFreeDelivery">
+              <h6>Free Delivery</h6>
+            </Container>
+          </Container>
+          <img src={massagerImage} alt="Massager" />
+          <Container fluid id="itemText">
+            <p>In stock</p>
+            <h6>Lifelong LLLM8 gun massager</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>50 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$80.50</h3>
+          </Container>
+        </Container>
+        {/* Second Item */}
+        <Container id="item">
+          <img src={toycarImage} alt="Toy Car" />
+          <Container fluid id="itemText">
+            <p>Few Units Left</p>
+            <h6>Baby battery operated toy car</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>60 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$167.99</h3>
+          </Container>
+        </Container>
+        {/* Third Item */}
+        <Container id="item">
+          <Container fluid id="freeDeliveryDiv">
+            <Container id="innerFreeDelivery">
+              <h6>Free Delivery</h6>
+            </Container>
+          </Container>
+          <img src={analogClockImage} alt="Analog Clock" />
+          <Container fluid id="itemText">
+            <p>In stock</p>
+            <h6>Analog Wall Clock with Solar Charging</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>60 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$30.00</h3>
+          </Container>
+        </Container>
+        {/* Fourth Item */}
+        <Container id="item">
+          <Container fluid id="freeDeliveryDiv">
+            <Container id="innerFreeDelivery">
+              <h6>Free Delivery</h6>
+            </Container>
+          </Container>
+          <img src={curlerImage} alt="Hair Curler" />
+          <Container fluid id="itemText">
+            <p>Few Units Left</p>
+            <h6>Pitch perfect hair curler for Women</h6>
+          </Container>
+          <Container fluid id="review">
+            <Container id="star">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </Container>
+            <p>84 reviews</p>
+          </Container>
+          <Container id="popularPriceDiv">
+            <h3>$15.99</h3>
           </Container>
         </Container>
       </Container>

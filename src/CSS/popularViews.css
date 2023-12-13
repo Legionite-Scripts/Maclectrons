@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 #popularViews {
-  height: 120em;
+  height: 150em;
   margin-top: 3%;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
   color: #1e1e1e;
   font-size: 1.8em;
   font-weight: 700;
+  margin: auto;
 }
 #popularProducts {
   height: 22em;
@@ -125,7 +126,6 @@
   font-size: 1.5em;
 }
 #weDeliver {
-  border: 1px solid #333;
   height: 25em;
   width: 95vw;
   display: flex;
@@ -179,7 +179,7 @@
 /* Screens from 768px to 1025px */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   #popularViews {
-    height: 280em;
+    height: 500em;
     margin-top: 3%;
     display: flex;
     flex-direction: column;
@@ -187,8 +187,17 @@
     align-items: center;
     border: 1px solid #333;
   }
+  #topViewsDiv {
+    height: auto;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+  }
   #popularProducts {
-    height: 40%;
+    height: 22%;
     border: 1px solid #333;
     display: flex;
     flex-direction: column;
@@ -292,7 +301,7 @@
 /* Screens lower than 767px */
 @media (max-width: 767px) {
   #popularViews {
-    height: 370em;
+    height: 450em;
     margin-top: 3%;
     display: flex;
     flex-direction: column;
@@ -300,8 +309,17 @@
     align-items: center;
     border: 1px solid #333;
   }
+  #topViewsDiv {
+    height: auto;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+  }
   #popularProducts {
-    height: 25%;
+    height: 20%;
     border: 1px solid #333;
     display: flex;
     flex-direction: column;
