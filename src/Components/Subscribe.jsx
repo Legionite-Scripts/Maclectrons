@@ -16,7 +16,7 @@ export const Subscribe = () => {
           </p>
           <button className="btn btn-success">View More</button>
         </Container>
-        <img src={blackwomanImage} alt="Woman" />
+        <img src={blackwomanImage} alt="Woman" data-aos="fade-left"/>
       </Container>
     </Container>
   );

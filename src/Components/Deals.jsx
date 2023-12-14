@@ -1,11 +1,17 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { useEffect } from "react";
 import tvImage from "./Images/dealsTV.png";
+import AOS from "aos"; //Import Animation On Scroll
+import "aos/dist/aos.css"; //Import AOS css file
 
 export const Deals = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <Container fluid id="deals">
-      <Container id="dealsDropdown">
+      <Container id="dealsDropdown" data-aos="fade-right">
         <h6>Categories</h6>
         <a href="#">Electronics</a>
         <a href="#">Mobile</a>
@@ -20,7 +26,7 @@ export const Deals = () => {
         <a href="#">Huawei</a>
         <a href="#">Pizzie</a>
       </Container>
-      <Container id="dealsProducts">
+      <Container id="dealsProducts" data-aos="fade-up">
         <Container fluid id="topDealsDiv">
           <h6>
             Brand new Smart TV starts at just <span>$800</span>

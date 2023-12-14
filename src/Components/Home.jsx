@@ -4,8 +4,13 @@ import { Container } from "react-bootstrap";
 import headphonesImage from "./Images/headphones.png";
 import iphoneImage from "./Images/iphone.png";
 import priceImage from "./Images/price.png";
+import AOS from "aos"; //Import Animation On Scroll
+import "aos/dist/aos.css"; //Import AOS css file
 
 export const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const [color, setColor] = useState("#f8e8e7");
 
   useEffect(() => {
@@ -58,7 +63,7 @@ export const Home = () => {
         <div className="circle"></div>
         <div className="circle"></div>
       </Container>
-      <Container id="homeText">
+      <Container id="homeText" data-aos="zoom-in-up">
         <h1 ref={el}>Purchase Headphones & Accessories</h1>
         <p>
           At Maclectrons, we don't just sell gadgets; we curate experiences that

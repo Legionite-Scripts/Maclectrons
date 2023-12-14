@@ -1,6 +1,9 @@
 import React from "react";
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import AOS from "aos"; //Import Animation On Scroll
+import "aos/dist/aos.css"; //Import AOS css file
 import earbudsImage from "./Images/earbuds.png";
 import oraimoImage from "./Images/oraimo.png";
 import laptopImage from "./Images/laptop.png";
@@ -23,6 +26,9 @@ import vacuumImage from "./Images/vacuum.png";
 import washingmachineImage from "./Images/washingmachine.png";
 
 export const PopularViews = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
     <Container fluid id="popularViews">
       <Container fluid id="topViewsDiv">
@@ -30,7 +36,7 @@ export const PopularViews = () => {
       </Container>
       <Container fluid id="popularProducts">
         {/* First Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={earbudsImage} alt="Buds" />
           <Container fluid id="itemText">
             <p>In stock</p>
@@ -51,7 +57,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Second Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={oraimoImage} alt="mp4" />
           <Container fluid id="itemText">
             <p>In stock</p>
@@ -72,7 +78,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Third Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={laptopImage} alt="Laptop" />
           <Container fluid id="itemText">
             <p>In stock</p>
@@ -93,7 +99,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Fourth Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={redHeadphonesImage} alt="Headphones" />
           <Container fluid id="itemText">
             <p>In stock</p>
@@ -122,7 +128,7 @@ export const PopularViews = () => {
       </Container>
       <Container fluid id="popularProducts">
         {/* First Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>
@@ -148,7 +154,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Second Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={clockImage} alt="LED Clock" />
           <Container fluid id="itemText">
             <p>In stock</p>
@@ -169,7 +175,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Third Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>
@@ -195,7 +201,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Fourth Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={fridgeImage} alt="Fridge" />
           <Container fluid id="itemText">
             <p>Few Units Left</p>
@@ -223,7 +229,7 @@ export const PopularViews = () => {
           <h1>We deliver to you</h1>
         </Container>
         <Container fluid id="innerWeDeliver">
-          <Container id="innerWeDeliverText">
+          <Container id="innerWeDeliverText" data-aos="zoom-in-up">
             <p>Awesome Discovery</p>
             <h1>Maclectrons Delivers at your door step</h1>
             <p>
@@ -243,7 +249,7 @@ export const PopularViews = () => {
       </Container>
       <Container fluid id="popularProducts">
         {/* First Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={cameraImage} alt="Digital Camera" />
           <Container fluid id="itemText">
             <p>Few Units Left</p>
@@ -264,7 +270,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Second Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>
@@ -290,7 +296,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Third Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>
@@ -316,7 +322,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Fourth Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={smartwatchImage} alt="SmartWatch" />
           <Container fluid id="itemText">
             <p>Few Units Left</p>
@@ -340,7 +346,7 @@ export const PopularViews = () => {
       {/* Fourth Section */}
       <Container fluid id="popularProducts">
         {/* First Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>
@@ -366,7 +372,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Second Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <img src={toycarImage} alt="Toy Car" />
           <Container fluid id="itemText">
             <p>Few Units Left</p>
@@ -387,7 +393,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Third Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>
@@ -413,7 +419,7 @@ export const PopularViews = () => {
           </Container>
         </Container>
         {/* Fourth Item */}
-        <Container id="item">
+        <Container id="item" data-aos="flip-left">
           <Container fluid id="freeDeliveryDiv">
             <Container id="innerFreeDelivery">
               <h6>Free Delivery</h6>

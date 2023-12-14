@@ -39,6 +39,8 @@ export const Footer = () => {
           <a href="#">contact us via mail on Maclectrons@gmail.com</a>
         </Container>
       </Container>
+      <hr />
+      <p id="copyright">© copyright 2023</p>
     </Container>
   );
 };
