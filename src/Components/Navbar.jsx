@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 // CSS import
 import "../CSS/navbar.css";
 
-const Navigationbar = () => {
+export const Navigationbar = () => {
   return (
     <Navbar expand="lg" id="navbar">
       <Container id="separationOne">
@@ -23,9 +23,15 @@ const Navigationbar = () => {
             <a href="#" id="link" style={{ fontWeight: 700 }}>
               All
             </a>
-            <a href="#deals" id="link">Latest Deals</a>
-           <a href="#popularViews" id="link">Gift Cards</a>
-           <a href="#kids" id="link">Bonanza</a>
+            <a href="#deals" id="link">
+              Latest Deals
+            </a>
+            <a href="#popularViews" id="link">
+              Gift Cards
+            </a>
+            <a href="#kids" id="link">
+              Bonanza
+            </a>
 
             <Container id="innerSeparationTwoHiddenIcons">
               <input type="text" placeholder="Search" id="navSearchBar" />
@@ -46,4 +52,3 @@ const Navigationbar = () => {
     </Navbar>
   );
 };
-export default Navigationbar;

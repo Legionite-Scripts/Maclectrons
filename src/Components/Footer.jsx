@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "../CSS/footer.css";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Container fluid id="footer">
       <Container fluid id="footerLinks">
@@ -45,4 +45,3 @@ const Footer = () => {
     </Container>
   );
 };
- export default Footer;

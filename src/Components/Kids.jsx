@@ -4,7 +4,7 @@ import joystickImage from "./Images/joystick.png";
 import childImage from "./Images/child.png";
 import "../CSS/kids.css";
 
-const Kids = () => {
+export const Kids = () => {
   return (
     <Container fluid id="kids">
       <Container id="innerKids">
@@ -31,4 +31,4 @@ const Kids = () => {
     </Container>
   );
 };
-export default Kids;
+

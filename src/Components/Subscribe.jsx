@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import blackwomanImage from "./Images/blackWoman.png";
 import "../CSS/subscribe.css";
 
-const Subscribe = () => {
+export const Subscribe = () => {
   return (
     <Container fluid id="subscribe">
       <Container fluid id="innerSubscribe">
@@ -17,9 +17,9 @@ const Subscribe = () => {
           </p>
           <button className="btn btn-success">View More</button>
         </Container>
-        <img src={blackwomanImage} alt="Woman" data-aos="fade-left" />
+        <img src={blackwomanImage} alt="Woman" />
       </Container>
     </Container>
   );
 };
-export default Subscribe;
+

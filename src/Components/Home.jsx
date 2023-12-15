@@ -8,7 +8,7 @@ import AOS from "aos"; //Import Animation On Scroll
 import "aos/dist/aos.css"; //Import AOS css file
 import "../CSS/home.css";
 
- const Home = () => {
+ export const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -82,4 +82,3 @@ import "../CSS/home.css";
   );
 };
 
-export default Home;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Carousel } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import sliderPerson from "./Images/sliderPerson.jfif";
 import sliderBox from "./Images/sliderBox.png";
@@ -7,7 +7,7 @@ import sliderPot from "./Images/sliderPot.png";
 import sliderHeadphones from "./Images/sliderHeadphones.png";
 import "../CSS/slider.css";
 
-const Slider = () => {
+export const Slider = () => {
   return (
     <Container fluid id="slider">
       <Container id="innerSliderContainer">
@@ -41,4 +41,3 @@ const Slider = () => {
     </Container>
   );
 };
-export default Slider;
