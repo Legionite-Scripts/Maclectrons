@@ -25,7 +25,7 @@ const Navigationbar = () => {
             </a>
             <a href="#deals" id="link">Latest Deals</a>
            <a href="#popularViews" id="link">Gift Cards</a>
-           <a href="#" id="link">Bonanza</a>
+           <a href="#kids" id="link">Bonanza</a>
 
             <Container id="innerSeparationTwoHiddenIcons">
               <input type="text" placeholder="Search" id="navSearchBar" />
