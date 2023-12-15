@@ -5,8 +5,9 @@ import sliderPerson from "./Images/sliderPerson.jfif";
 import sliderBox from "./Images/sliderBox.png";
 import sliderPot from "./Images/sliderPot.png";
 import sliderHeadphones from "./Images/sliderHeadphones.png";
+import "../CSS/slider.css";
 
-export const Slider = () => {
+const Slider = () => {
   return (
     <Container fluid id="slider">
       <Container id="innerSliderContainer">
@@ -40,3 +41,4 @@ export const Slider = () => {
     </Container>
   );
 };
+export default Slider;

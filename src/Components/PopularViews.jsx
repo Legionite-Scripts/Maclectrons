@@ -24,8 +24,9 @@ import curlerImage from "./Images/curler.png";
 import microwaveImage from "./Images/microwave.png";
 import vacuumImage from "./Images/vacuum.png";
 import washingmachineImage from "./Images/washingmachine.png";
+import "../CSS/popularViews.css";
 
-export const PopularViews = () => {
+const PopularViews = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -480,3 +481,4 @@ export const PopularViews = () => {
     </Container>
   );
 };
+export default PopularViews;

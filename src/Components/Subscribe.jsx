@@ -2,8 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import blackwomanImage from "./Images/blackWoman.png";
+import "../CSS/subscribe.css";
 
-export const Subscribe = () => {
+const Subscribe = () => {
   return (
     <Container fluid id="subscribe">
       <Container fluid id="innerSubscribe">
@@ -21,3 +22,4 @@ export const Subscribe = () => {
     </Container>
   );
 };
+export default Subscribe;

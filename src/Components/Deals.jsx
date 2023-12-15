@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import tvImage from "./Images/dealsTV.png";
 import AOS from "aos"; //Import Animation On Scroll
 import "aos/dist/aos.css"; //Import AOS css file
+import "../CSS/deals.css";
 
-export const Deals = () => {
+const Deals = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -53,3 +54,4 @@ export const Deals = () => {
     </Container>
   );
 };
+export default Deals;

@@ -2,8 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import joystickImage from "./Images/joystick.png";
 import childImage from "./Images/child.png";
+import "../CSS/kids.css";
 
-export const Kids = () => {
+const Kids = () => {
   return (
     <Container fluid id="kids">
       <Container id="innerKids">
@@ -30,3 +31,4 @@ export const Kids = () => {
     </Container>
   );
 };
+export default Kids;

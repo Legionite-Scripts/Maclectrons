@@ -6,8 +6,9 @@ import iphoneImage from "./Images/iphone.png";
 import priceImage from "./Images/price.png";
 import AOS from "aos"; //Import Animation On Scroll
 import "aos/dist/aos.css"; //Import AOS css file
+import "../CSS/home.css";
 
-export const Home = () => {
+ const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
@@ -80,3 +81,5 @@ export const Home = () => {
     </Container>
   );
 };
+
+export default Home;
