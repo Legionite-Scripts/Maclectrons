@@ -12,6 +12,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   background-color: #fbfbfb;
+  padding: 1em;
 }
 #navbar {
   width: 100vw;
@@ -21,6 +22,7 @@ body {
   align-items: center;
   padding: 1em;
   background-color: #fbfbfb;
+  overflow: hidden;
 }
 #separationOne {
   width: 50%;

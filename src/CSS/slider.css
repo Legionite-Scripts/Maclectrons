@@ -8,6 +8,7 @@
   align-items: center;
   overflow: hidden;
   background-color: #f2f3f5;
+  overflow-x: hidden;
 }
 #innerSliderContainer {
   width: 25%;
