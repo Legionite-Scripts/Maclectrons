@@ -25,7 +25,7 @@ export const Navigationbar = () => {
             <Link to="/features" id="link">
               Latest Deals
             </Link>
-            <Link to="/pages" id="link">
+            <Link to="/popular" id="link">
               Gift Cards
             </Link>
             <Link to="/portfolio" id="link">
