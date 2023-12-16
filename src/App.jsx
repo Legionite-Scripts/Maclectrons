@@ -16,8 +16,8 @@ function App() {
       <Deals />
       <Kids />
       <PopularViews />
-      <Subscribe/>
-      <Footer/>
+      <Subscribe />
+      <Footer />
     </div>
   );
 }
